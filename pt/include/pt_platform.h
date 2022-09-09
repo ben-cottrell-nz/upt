@@ -8,13 +8,15 @@
 #include "pt_rect.h"
 
 #ifdef __linux__
-#include <platform_types/linux/wm-types.h>
+#include "platform_types/linux/wm-types.h"
 #endif
 
 namespace pt_platform {
-    native_window create_window(const pt_rect& rect);
-    void run_event_loop(native_window*);
-    void dispose(native_window*);
+    native_window_t create_window(const pt_rect* rect);
+    native_window_t native_main_window();
+    void create_application(int, char**);
+    void run_event_loop(native_window_t);
+    void dispose(native_window_t);
 };
 
 

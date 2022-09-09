@@ -17,10 +17,10 @@ public:
     pt_window(pt_window&);
     explicit pt_window(const pt_rect&);
     ~pt_window();
-    pt_platform::native_window* native_window();
+    pt_platform::native_window_t native_window();
     void show();
 private:
-    pt_platform::native_window _native_window;
+    pt_platform::native_window_t _native_window;
 };
 
 

@@ -4,11 +4,10 @@
 
 #ifndef SHOWCASE_WM_TYPES_H
 #define SHOWCASE_WM_TYPES_H
-#include <X11/Xlib.h>
+
+#include <gtk-3.0/gtk/gtk.h>
+
 namespace pt_platform {
-    struct native_window {
-        Display *display;
-        Window handle;
-    };
+    using native_window_t = GtkWidget*;
 }
 #endif //SHOWCASE_WM_TYPES_H

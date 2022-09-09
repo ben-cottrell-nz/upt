@@ -3,10 +3,10 @@
 #include "pt_window.h"
 
 
-int main() {
-    pt_application app;
-    pt_window window({0,0,640,430});
-    app.add_main_window(&window);
+int main(int argc, char* argv[]) {
+    pt_application app(argc,argv);
+    pt_window window({0,0,1024,768});
+    app.add_window(&window);
     app.run();
     return 0;
 }
