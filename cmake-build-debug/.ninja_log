@@ -1,0 +1,18 @@
+# ninja log v5
+2	482	1663053974958812587	pt/src/CMakeFiles/pt.dir/linux/pt_platform.cpp.o	9e3803199a37faa8
+2	843	1663054024906432224	CMakeFiles/showcase.dir/main.cpp.o	a4dba737a6884fcc
+3	948	1663054699452118265	pt/src/CMakeFiles/pt.dir/pt_application.cpp.o	45720c7dacb6630d
+27	703	1664672912203884150	upt/src/CMakeFiles/pt.dir/linux/pt_platform.cpp.o	c8139e1074664f17
+3	1233	1664672912731883583	upt/src/CMakeFiles/pt.dir/pt_window.cpp.o	597495afd42cba23
+3	954	1664672912451883884	upt/src/CMakeFiles/pt.dir/pt_object.cpp.o	24996f617fe2f1ae
+0	17	1664673852123777886	build.ninja	cdcbd5f7f64e910a
+3	26	1664672911527884870	upt/src/CMakeFiles/pt.dir/pt_event.cpp.o	dd5ac6360c2b9abd
+2	536	1662774802647789546	pt/src/CMakeFiles/pt.dir/pt_object.cpp.o	a1cb401d3be04bad
+887	1017	1663054135549583698	showcase	50b37e90bbc2b163
+0	3	0	clean	ca0dbfdcabf4583d
+3	1154	1664672912651883669	upt/src/CMakeFiles/pt.dir/pt_application.cpp.o	75821f39ccb45016
+4	912	1663054699416118608	pt/src/CMakeFiles/pt.dir/pt_window.cpp.o	51c3c8f5823aafc3
+4	970	1663054699476118036	pt/src/CMakeFiles/pt.dir/pt_button.cpp.o	b91718c906cb8d8d
+825	887	1663054135417584715	pt/src/libpt.a	2ce6a4aa275fc020
+4	22	1662774680973040389	pt/src/CMakeFiles/pt.dir/pt_event.cpp.o	5f2c0c0ed1eb044b
+4	954	1664672912451883884	upt/src/CMakeFiles/pt.dir/pt_button.cpp.o	a57ea2b42d42dafc

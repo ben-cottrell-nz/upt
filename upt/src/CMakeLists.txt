@@ -1,20 +1,30 @@
 cmake_minimum_required(VERSION 3.17)
-project(showcase)
+project(pt)
 
-set(CMAKE_CXX_STANDARD 20)
-
-set(UPT_PATH upt)
-add_subdirectory(${UPT_PATH}/src)
-include_directories(${UPT_PATH}/include)
-
+#include_directories(../include)
 set(SOURCES
-        main.cpp)
-
-add_executable(showcase ${SOURCES})
-target_link_libraries(showcase PUBLIC pt)
+        upt_application.cpp
+        upt_object.cpp
+        upt_window.cpp
+        upt_event.cpp
+        upt_button.cpp)
 
 if(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
-    target_include_directories(showcase PRIVATE
+    set(PLATFORM_SRCS
+            linux/upt_platform.cpp)
+elseif(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Windows")
+    set(PLATFORM_SRCS
+            msw/upt_platform.cpp)
+endif()
+
+# this is used so we don't need headers for types
+# only needed in the library's implementation
+#add_compile_definitions(LIBPT_BUILD)
+add_library(pt ${SOURCES} ${PLATFORM_SRCS})
+
+if (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
+    target_include_directories(pt PRIVATE
+            ../include/linux
             /usr/include/gtk-3.0
             /usr/include/at-spi2-atk/2.0
             /usr/include/at-spi-2.0
@@ -39,8 +49,9 @@ if(${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
             /usr/include/freetype2
             /usr/include/libpng16
             /usr/include/glib-2.0
-            /usr/lib/x86_64-linux-gnu/glib-2.0/include)
-    target_link_libraries(showcase PRIVATE
+            /usr/lib/x86_64-linux-gnu/glib-2.0/include
+    )
+    target_link_libraries(pt PRIVATE
             gtk-3
             gdk-3
             pangocairo-1.0
