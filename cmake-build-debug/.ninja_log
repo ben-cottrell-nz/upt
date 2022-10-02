@@ -16,3 +16,9 @@
 825	887	1663054135417584715	pt/src/libpt.a	2ce6a4aa275fc020
 4	22	1662774680973040389	pt/src/CMakeFiles/pt.dir/pt_event.cpp.o	5f2c0c0ed1eb044b
 4	954	1664672912451883884	upt/src/CMakeFiles/pt.dir/pt_button.cpp.o	a57ea2b42d42dafc
+3	25	1664674775987209691	upt/src/CMakeFiles/pt.dir/upt_event.cpp.o	cc26d69e1a7097f9
+3	621	1664674776579203126	upt/src/CMakeFiles/pt.dir/upt_object.cpp.o	669416c5b0929cfe
+26	808	1664674776767201040	upt/src/CMakeFiles/pt.dir/linux/upt_platform.cpp.o	ff4e514fb9023c4f
+2	907	1664674776867199931	upt/src/CMakeFiles/pt.dir/upt_application.cpp.o	9605289d648ea5ad
+3	1123	1664674777083197536	upt/src/CMakeFiles/pt.dir/upt_window.cpp.o	e9f40e40e1831a2b
+3	1208	1664674777167196605	upt/src/CMakeFiles/pt.dir/upt_button.cpp.o	ce524c4792091fab

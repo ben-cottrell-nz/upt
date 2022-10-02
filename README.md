@@ -6,7 +6,7 @@ using platform calls.
 - Support for these systems:
   - GNU/Linux with GTK+-3.0
   - Microsoft Windows 10
-  - Apple macOS 
+  - Apple macOS with Cocoa
 - Ability to build, as close as possible, similar looking and functioning 
 user interfaces across platforms, even at the cost of platform specific features.
 - Ease of use, with modern C++11 (and up) features.
